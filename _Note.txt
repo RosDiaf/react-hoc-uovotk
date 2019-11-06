@@ -1,0 +1,34 @@
+Understanding React Higher-Order Components by Example
+https://medium.com/faun/44-quick-tips-to-fine-tune-angular-performance-9f5768f5d945
+
+React Higher-Order Components
+https://tylermcginnis.com/react-higher-order-components/
+
+What are Higher-Order Components in React?
+https://css-tricks.com/what-are-higher-order-components-in-react/
+
+(Our) Higher-Order Component
+Is a component
+Takes in a component as an argument
+Returns a new component
+The component it returns can render the original component that was passed in
+
+function higherOrderComponent (Component) {
+  return class extends React.Component {
+    render() {
+      return <Component />
+    }
+  }
+}
+
+Using Recompose to write clean higher-order Components
+https://blog.logrocket.com/using-recompose-to-write-clean-higher-order-components-3019a6daf44c/
+
+React tips — Recompose
+https://medium.com/@leonardobrunolima/react-tips-recompose-ae6f83579423
+
+Recompose
+https://recompose.docsforhumans.com/methods.html
+
+Example
+https://codesandbox.io/s/github/juanmaguitar/recompose-log-rocket/tree/master/?from-embed
