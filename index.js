@@ -10,42 +10,14 @@ import Hoc from './Components/HOC';
 // -- Services
 import getPages from './Services/DrupalPageService'
 
+// -- Data
+import { StocksData, UsersData } from './Data/mockData'
+
 // -- Styles
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
 
 const data = getPages()
-
-const StocksData = [
-  {
-      id: 1,
-      name: 'TCS'
-        
-  },
-  {
-      id: 2,
-      name: 'Infosys'
-  },
-  {
-      id: 3,
-      name: 'Reliance'
-  }
-];
-const UsersData = [
-  {
-      id: 1,
-      name: 'Krunal'
-        
-  },
-  {
-      id: 2,
-      name: 'Ankit'
-  },
-  {
-      id: 3,
-      name: 'Rushabh'
-  }
-];
 
 const Stocks = Hoc(
   StockList,
