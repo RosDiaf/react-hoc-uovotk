@@ -13,7 +13,7 @@ import UserList from './Components/UserList';
 import CompPage from './Components/Page';
 import Hoc from './Components/HOC';
 
-import Wrapper from './RenderProps/Wrapper';
+import App from './RenderProps/App';
 
 // -- Services
 import getPages from './Services/DrupalPageService'
@@ -47,14 +47,14 @@ class App extends Component {
     return (
       <Router>
         <Fragment>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <Link to="/page" class="nav-link">HOC</Link>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                  <Link to="/page" className="nav-link">HOC</Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/wrapper" class="nav-link">Render Props</Link>
+                <li className="nav-item">
+                  <Link to="/app" className="nav-link">Render Props</Link>
                 </li>
               </ul>
             </div>
@@ -63,8 +63,8 @@ class App extends Component {
             <Route path="/page">
               <Page />
             </Route>
-            <Route path="/wrapper">
-              <Wrapper />
+            <Route path="/app">
+              <App />
             </Route>
           </Switch>
         </Fragment>

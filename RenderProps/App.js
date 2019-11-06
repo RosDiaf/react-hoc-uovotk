@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import Wrapper from './Wrapper'
 
 const App = () => {
   return (
